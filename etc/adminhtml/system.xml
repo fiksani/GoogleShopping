@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="fandi" translate="label" sortOrder="200">
+            <label>Fandi</label>
+        </tab>
+        <section id="google_shopping" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Google Shopping</label>
+            <tab>fandi</tab>
+            <resource>Fandi_GoogleShopping::settings</resource>
+            <group id="googleshopping_settings" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Google Shopping</label>
+                <field id="button_googleshopping_download" translate="label" type="button" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Manual Generate CSV</label>
+                    <frontend_model>Fandi\GoogleShopping\Block\System\Config\Button</frontend_model>
+                </field>
+                <field id="default_google_product_category" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default Google Shopping Category</label>
+                    <comment>Google category to use for products in feed if not set on product level.</comment>
+                </field>
+                <field id="google_product_category_attribute" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google Shopping Category</label>
+                    <comment>Attribute code used for Google Shopping Category</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

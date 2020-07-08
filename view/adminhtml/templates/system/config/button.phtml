@@ -1,0 +1,12 @@
+<script>
+require([
+    'jquery',
+    'prototype',
+], function(jQuery){
+    jQuery('#btn_generate_csv').click(function () {
+        window.open("<?php echo $block->getCustomUrl() ?>", '_blank');
+    });
+});
+</script>
+
+<?php echo $block->getButtonHtml(); ?>
