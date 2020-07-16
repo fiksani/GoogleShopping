@@ -1,10 +1,9 @@
 To install:
 
 ```
-mkdir -p /path/to/store/thirdparty/Fandi
-cd /path/to/store/thirdparty/Fandi
-git clone git@github.com:fiksani/GoogleShopping.git
-ln -s /path/to/store/app/code/Fandi /path/to/store/thirdparty/Fandi
+mkdir -p /path/to/store/app/code/Fandi
+cd /path/to/store/app/code/Fandi
+git clone git@github.com:fiksani/Magento-2-GoogleShopping.git GoogleShopping
 php bin/magento module:enable Fandi_GoogleShopping
 php bin/magento setup:upgrade
 ```
